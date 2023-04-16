@@ -1,0 +1,1010 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:wght@200;300;400&display=swap');
+body{
+    margin: 0;
+    background: rgb(128, 176, 186);
+    background: linear-gradient(90deg, rgba(128, 176, 186, 1) 5%, rgba(128, 176, 186, 1) 10%, rgba(80, 71, 134, 1) 18%);
+}
+.index{
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.app{
+    display: flex;
+}
+#instructions{
+    padding: 30px;
+    width: 50%;
+}
+.index h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 28px;
+    color:rgba(80, 71, 134, 1) !important;
+    line-height: 2;
+    border-bottom: 5px dotted white;
+}
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 28px;
+    color: azure !important;
+    line-height: 2 !important;
+    border-bottom: 5px dotted white;
+    border-width: 10px;
+    text-align: center;
+}
+p{
+    color: azure;
+}
+h5{
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1.75;
+    color: azure !important;
+    padding-top: 30px;
+}
+.button-container .social{
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 8px;
+    color: azure;
+    border: 3px solid azure;
+    margin: 30px 15px;
+}
+.button-container .social:hover {
+    background-color: azure;
+    color: rgb(128, 176, 186);
+    padding: 12px;
+}
+.index-text{
+    padding: 0 20px;
+    color: azure;
+    text-align: center;
+    letter-spacing: 1;
+    line-height: 1.5;
+}
+.index-image{
+    border: 4px dotted white;
+    border-radius: 20px;
+}
+#proceed{
+    background-color: rgb(209, 22, 6);
+        border: none;
+        border-radius: 4px;
+        font-family: 'PT Sans', sans-serif;
+        line-height: 1.5;
+        color: rgb(255, 255, 255);
+        padding: 5px 10px;
+        margin-top: 20px;
+}
+p{
+    font-family: 'PT Sans', sans-serif;
+}
+.help{
+    font-family: 'Source Code Pro', monospace;
+    background-color: rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+.editor{
+    position: relative;
+    background-color: rgb(224,224,224);
+    height: 260px;
+    padding: 10px 10px 10px 40px;
+    border-radius: 4px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(119,119,119);
+    overflow: hidden;
+}
+.line-numbers{
+    position: absolute;
+    background-color: rgb(153,153,153);
+    color: rgb(213,213,213);
+    top:0;
+    left:0;
+    padding: 10px 6px;
+    height: 100%;
+    text-align: right;
+}
+pre{
+    margin: 0;
+}
+textarea{
+    height: 44px;
+    width: 85%;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    margin-left: 26px;
+}
+.lesgo{
+    background-image: url('./img/lesgo.gif');
+    width: 100px;
+    height: 120px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#submit{
+    background-color: rgb(209,22,6);
+    border: none;
+    border-radius: 4px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    padding:  5px 10px;
+    position: absolute;
+    right:15px;
+    bottom:15px;
+}
+select{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding:2px;
+    color:white;
+}
+option{
+    background-color: rgba(128, 176, 186, 1);
+}
+.button-container{
+    margin: 10px 0;
+}
+#previous,#next{
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    width:90px;
+    margin-right: 10px;
+}
+#previous:hover{
+    background-color:rgba(80, 71, 134, 1);
+    filter: brightness(1.2);
+}
+#next:hover{
+ background-color: rgba(128, 176, 186, 1);
+ filter: brightness(1.2);
+}
+
+
+#home{
+    background: rgb(128, 176, 186);
+    background: radial-gradient(circle, rgba(128, 176, 186, 1) 35%, rgba(80, 71, 134, 1) 61%);
+    border-bottom-left-radius: 30px;
+    width: 50vw;
+    height: 50vw;
+    overflow: hidden;
+    min-width: 300px;
+    min-height: 300px;
+    position: relative;
+}
+.level-1 #forefront{
+    position: absolute;
+    /* justify-content: flex-end; */
+    z-index: 1;
+    left:-30;
+    top: 0;
+    width:95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+.level-1 #background {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+.home-container, .oggy-container{
+    width:20%;
+    height: 20%;
+}
+.home, .oggy{
+    width:100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.level-1 .home{
+    background-image: url('./img/cockroaches.png');
+}
+.level-1 .oggy{
+    background-image:url("./img/oggy.gif") ;
+}
+
+/* level-2 */
+
+.level-2 #forefront {
+    position: absolute;
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    z-index: 1;
+    left: -10;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+
+.level-2 #background {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+.level-2 .home {
+    background-image: url('./img/cupcake.png');
+}
+
+.level-2 .oggy {
+    background-image: url("./img/oggy-hungry.gif");
+}
+
+
+/* level 3 */
+
+.level-3 #forefront {
+    position: absolute;
+    /* justify-content: space-between;
+    align-items: center; */
+    z-index: 1;
+    left: -10;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+
+.level-3 #background {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.food1,.food2,.food3,.roach1,.roach2,.roach3{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.level-3 .food1 {
+    background-image: url('./img/food1.png');
+}
+.level-3 .food2 {
+    background-image: url('./img/food2.png');
+}
+.level-3 .food3 {
+    background-image: url('./img/food3.png');
+}
+
+.level-3 .roach1 {
+    background-image: url("./img/roach1.png");
+}
+.level-3 .roach2 {
+    background-image: url("./img/roach2.png");
+}
+.level-3 .roach3 {
+    background-image: url("./img/roach3.png");
+}
+
+/* level-4 */ 
+
+.level-4 #forefront {
+    position: absolute;
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+    z-index: 1;
+    left: -10;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+
+.level-4 #background {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+.telephone, .tv{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+.level-4 .telephone {
+    background-image: url('./img/telephone.png');
+}
+.level-4 .tv {
+    background-image: url('./img/tv.png');
+}
+
+.level-4 .oggy {
+    background-image: url("./img/oggy_cry.gif");
+}
+
+/* level-5 */
+
+.level-5 #forefront {
+    position: absolute;
+    /* justify-content: center;
+    align-items: center; */
+    z-index: 1;
+    left: -10;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+.level-5 .jack-container {
+    width: 20%;
+    height: 20%;
+}
+.level-5 #background {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.gun,.chainsaw,.flapper,.jack {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.level-5 .chainsaw {
+    background-image: url('./img/chainsaw.png');
+}
+
+.level-5 .flapper {
+    background-image: url('./img/flapper.png');
+}
+.level-5 .gun {
+    background-image: url('./img/gun.png');
+}
+
+.level-5 .jack {
+    background-image: url("./img/jack.png");
+}
+
+/* level-6 */
+
+.level-6 #forefront {
+    position: absolute;
+    /* justify-content: space-between;
+    align-items: center; */
+    z-index: 1;
+    left: -10;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+
+.level-6 .jack-container {
+    width: 20%;
+    height: 20%;
+}
+
+.level-6 #background {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.cockroaches,.oggy,
+.jack {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.level-6 .cockroaches {
+    background-image: url('./img/cockroaches-2.png');
+}
+
+.level-6 .oggy {
+    background-image: url('./img/oggy-hit.png');
+}
+
+.level-6 .jack {
+    background-image: url("./img/jack-hit.png");
+}
+
+/* level 7 */
+
+.level-7 #forefront {
+    position: absolute;
+    /* align-items: center;
+    flex-direction: row-reverse; */
+    z-index: 1;
+    left: -10;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+
+.level-7 #background {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.food1,
+.food2,
+.food3,
+.roach1,
+.roach2,
+.roach3 {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.level-7 .food1 {
+    background-image: url('./img/food1.png');
+}
+
+.level-7 .food2 {
+    background-image: url('./img/food2.png');
+}
+
+.level-7 .food3 {
+    background-image: url('./img/food3.png');
+}
+
+.level-7 .roach1 {
+    background-image: url("./img/roach1.png");
+}
+
+.level-7 .roach2 {
+    background-image: url("./img/roach2.png");
+}
+
+.level-7 .roach3 {
+    background-image: url("./img/roach3.png");
+}
+
+/* level 8 */
+
+.level-8 #forefront {
+    position: absolute;
+    /* flex-direction: column-reverse; */
+    z-index: 1;
+    left: -10;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+
+.level-8 #background {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.food1,
+.food2,
+.oggy, 
+.jack {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.level-8 .food1 {
+    background-image: url('./img/food1.png');
+}
+
+.level-8 .food2 {
+    background-image: url('./img/milk.png');
+}
+
+.level-8 .oggy {
+    background-image: url("./img/oggy.png");
+}
+
+.level-8 .jack {
+    background-image: url("./img/jack.png");
+}
+
+.level-7 .roach3 {
+    background-image: url("./img/roach3.png");
+}
+
+/* level 9 */
+
+.level-9 #forefront {
+    position: absolute;
+    /* flex-direction: row-reverse;
+    justify-content: flex-start; */
+    z-index: 1;
+    left: -10;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+
+.level-9 #background {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.food1,
+.food2,
+.food3,
+.roach1,
+.roach2,
+.roach3 {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.level-9 .food1 {
+    background-image: url('./img/food1.png');
+}
+
+.level-9 .food2 {
+    background-image: url('./img/food2.png');
+}
+
+.level-9 .food3 {
+    background-image: url('./img/food3.png');
+}
+
+.level-9 .roach1 {
+    background-image: url("./img/roach1.png");
+}
+
+.level-9 .roach2 {
+    background-image: url("./img/roach2.png");
+}
+
+.level-9 .roach3 {
+    background-image: url("./img/roach3.png");
+}
+
+/* level 10 */
+
+.level-10 #forefront {
+    position: absolute;
+    /* flex-direction: row-reverse;
+    justify-content: center;
+    align-items: end; */
+    z-index: 1;
+    left: -10;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+
+.level-10 #background {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.food1,
+.food2,
+.food3,
+.oggy,
+.jack,
+.bob {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.level-10 .food1 {
+    background-image: url('./img/food2.png');
+}
+
+.level-10 .food2 {
+    background-image: url('./img/food1.png');
+}
+
+.level-10 .food3 {
+    background-image: url('./img/milk.png');
+}
+
+.level-10 .oggy {
+    background-image: url("./img/oggy.png");
+}
+
+.level-10 .jack {
+    background-image: url("./img/jack.png");
+}
+
+.level-10 .bob {
+    background-image: url("./img/bob.png");
+}
+
+/* level 11 */
+
+.level-11 #forefront {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    /* flex-wrap: wrap; */
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+
+.level-11 #background {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.food1,
+.food2,
+.food3,
+.oggy,
+.jack,
+.bob {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.level-11 .food1 {
+    background-image: url('./img/food2.png');
+}
+
+.level-11 .food2 {
+    background-image: url('./img/food1.png');
+}
+
+.level-11 .food3 {
+    background-image: url('./img/milk.png');
+}
+
+.level-11 .oggy {
+    background-image: url("./img/oggy.png");
+}
+
+.level-11 .jack {
+    background-image: url("./img/jack.png");
+}
+
+.level-11 .bob {
+    background-image: url("./img/bob.png");
+}
+
+/* level 12 */
+
+.level-12 #forefront {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    /*flex-direction: column;
+        flex-wrap: wrap;*/
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+
+.level-12 #background {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.food1,
+.food2,
+.food3,
+.oggy,
+.jack,
+.bob {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.level-12 .food1 {
+    background-image: url('./img/food2.png');
+}
+
+.level-12 .food2 {
+    background-image: url('./img/food1.png');
+}
+
+.level-12 .food3 {
+    background-image: url('./img/milk.png');
+}
+
+.level-12 .oggy {
+    background-image: url("./img/oggy.png");
+}
+
+.level-12 .jack {
+    background-image: url("./img/jack.png");
+}
+
+.level-12 .bob {
+    background-image: url("./img/bob.png");
+}
+
+/* level 13 */
+
+.level-13 #forefront {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    /* flex-flow: column wrap; */
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+
+.level-13 #background {
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.food1,
+.food2,
+.food3,
+.oggy,
+.jack,
+.bob {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.level-13 .food1 {
+    background-image: url('./img/food2.png');
+}
+
+.level-13 .food2 {
+    background-image: url('./img/food1.png');
+}
+
+.level-13 .food3 {
+    background-image: url('./img/milk.png');
+}
+
+.level-13 .oggy {
+    background-image: url("./img/oggy.png");
+}
+
+.level-13 .jack {
+    background-image: url("./img/jack.png");
+}
+
+.level-13 .bob {
+    background-image: url("./img/bob.png");
+}
+
+/* level 14 */
+
+.level-14 #forefront {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    flex-wrap: wrap;
+    /* align-content: start; */
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+
+.level-14 #background {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.food1,
+.oggy{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.level-14 .food1 {
+    background-image: url('./img/cupcake.png');
+}
+
+.level-14 .oggy {
+    background-image: url("./img/oggy-hungry.gif");
+}
+
+/* level 15 */
+
+.level-15 #forefront {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    /* flex-flow: column-reverse wrap-reverse;
+        justify-content: center;
+        align-content: space-between; */
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+    display: flex;
+}
+
+.level-15 #background {
+    position: absolute;
+    display: flex;
+    flex-flow: column-reverse wrap-reverse;
+    justify-content: center;
+    align-content: space-between;
+    left: 30;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.food1,
+.food2,
+.food3,
+.oggy,
+.jack,
+.bob {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.level-15 .food1 {
+    background-image: url('./img/food2.png');
+}
+
+.level-15 .food2 {
+    background-image: url('./img/food1.png');
+}
+
+.level-15 .food3 {
+    background-image: url('./img/milk.png');
+}
+
+.level-15 .oggy {
+    background-image: url("./img/oggy.png");
+}
+
+.level-15 .jack {
+    background-image: url("./img/jack.png");
+}
+
+.level-15 .bob {
+    background-image: url("./img/bob.png");
+}
