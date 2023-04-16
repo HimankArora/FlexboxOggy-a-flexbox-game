@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level-9</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="app level-9">
+        <section id="instructions">
+            <h1>Flexbox OGGY</h1>
+            <p id="level">Level 9</p>
+            <select id="levelSelect" onchange="goToLevel()">
+                <option value="">Select a page</option>
+                <option value="level-1">Level 1</option>
+                <option value="level-2">Level 2</option>
+                <option value="level-3">Level 3</option>
+                <option value="level-4">Level 4</option>
+                <option value="level-5">Level 5</option>
+                <option value="level-6">Level 6</option>
+                <option value="level-7">Level 7</option>
+                <option value="level-8">Level 8</option>
+                <option value="level-9">Level 9</option>
+                <option value="level-10">Level 10</option>
+                <option value="level-11">Level 11</option>
+                <option value="level-12">Level 12</option>
+                <option value="level-13">Level 13</option>
+                <option value="level-14">Level 14</option>
+                <option value="level-15">Level 15</option>
+                <option value="level-16">Level 16</option>
+                <option value="level-17">Level 17</option>
+                <option value="level-18">Level 18</option>
+                <option value="level-19">Level 19</option>
+                <option value="level-20">Level 20</option>
+            </select>
+            <div class="button-container">
+                <button id="previous" onclick="level8()">Previous</button>
+                <button id="next" disabled=true onclick="level10()">Next</button>
+            </div>
+            <p class="heading">Help cockroach 1 and 3 change their position so they can eat their favorite food <br> using <span class="help">flex-direction</span>and <span
+                    class="help">justify-content</span><br><br><span class="help">flex-direction</span> is a CSS property
+                that defines the direction items are placed in the container, and accepts the following
+                values:<br><br><span class="help">row:</span> Items are placed the same as the text direction.<br>
+                <span class="help">row-reverse:</span> Items are placed opposite to the text direction.<br>
+                <span class="help">column:</span> Items are placed top to bottom.<br>
+                <span class="help">column-revere:</span> Items are placed bottom to top.<br>
+            </p>
+            <div class="editor">
+                <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
+                <pre>#home
+display: flex;</pre>
+                <textarea spellcheck="false"></textarea>
+                <pre>}</pre>
+                <div class="lesgo"></div>
+                <button id="submit">Check</button>
+            </div>
+        </section>
+
+
+        <section id="home">
+            <div id="forefront">
+                <div class="oggy-container">
+                    <div class="roach1"></div>
+                </div>
+                <div class="oggy-container">
+                    <div class="roach2"></div>
+                </div>
+                <div class="oggy-container">
+                    <div class="roach3"></div>
+                </div>
+            </div>
+            <div id="background">
+                <div class="home-container">
+                    <div class="food1"></div>
+                </div>
+                <div class="home-container">
+                    <div class="food2"></div>
+                </div>
+                <div class="home-container">
+                    <div class="food3"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
